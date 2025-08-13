@@ -34,7 +34,7 @@ const ProductGrid = ({ searchTerm, price }) => {
   useEffect(() => {
     const updateCartCount = () => {
       const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-      setCartCount(cartItems.length - 1);
+      setCartCount(cartItems.length);
     };
 
     updateCartCount();
